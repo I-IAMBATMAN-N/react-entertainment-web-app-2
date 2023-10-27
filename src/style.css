@@ -41,6 +41,7 @@ body {
   margin: 0 auto;
 
   position: relative;
+  padding-bottom: 12.8rem;
 }
 .hidden {
   display: none !important;
