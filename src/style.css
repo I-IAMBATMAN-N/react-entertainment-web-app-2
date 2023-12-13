@@ -47,6 +47,7 @@ body {
   margin: 0 auto;
 
   position: relative;
+
   padding-bottom: 12.8rem;
 }
 .hidden {
@@ -223,6 +224,9 @@ body {
   display: -ms-grid;
   display: grid;
   gap: 2.4rem;
+
+  -ms-grid-columns: (1fr) [4];
+  grid-template-columns: repeat(4, 1fr);
 }
 .heading-large {
   font-size: 3.2rem;
@@ -339,10 +343,6 @@ body {
   .user-icon {
     margin-top: auto;
   }
-  .recommended-container {
-    -ms-grid-columns: (1fr) [4];
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 @media (max-width: 48em) {
   html {
@@ -370,11 +370,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-@media (max-width: 23.5em) {
+@media (max-width: 40em) {
   .recommended-container {
     -ms-grid-columns: (1fr) [2];
     grid-template-columns: repeat(2, 1fr);
   }
+}
+@media (max-width: 23.5em) {
   .main-nav--list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
