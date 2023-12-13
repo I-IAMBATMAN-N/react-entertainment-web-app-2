@@ -344,6 +344,12 @@ body {
     margin-top: auto;
   }
 }
+@media (max-width: 70em) {
+  .recommended-container {
+    -ms-grid-columns: (1fr) [3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 @media (max-width: 48em) {
   html {
     font-size: 50%;
@@ -364,10 +370,6 @@ body {
   .main-nav--list img {
     width: 2.5rem;
     height: auto;
-  }
-  .recommended-container {
-    -ms-grid-columns: (1fr) [3];
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 @media (max-width: 40em) {
